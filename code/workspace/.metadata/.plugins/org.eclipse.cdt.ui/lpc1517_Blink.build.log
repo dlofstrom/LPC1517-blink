@@ -1,13 +1,13 @@
-21:54:13 **** Incremental Build of configuration Debug for project lpc1517_Blink ****
+23:13:36 **** Incremental Build of configuration Debug for project lpc1517_Blink ****
 make -r all 
 Building file: ../src/lpc1517_Blink.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__USE_CMSIS_DSPLIB=CMSIS_DSPLIB_CM3 -D__LPC15XX__ -D__REDLIB__ -I"C:\Users\Daniel\Desktop\lpc1517\code\workspace\lpc_chip_15xx\inc" -I"C:\Users\Daniel\Desktop\lpc1517\code\workspace\CMSIS_DSPLIB_CM3\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/lpc1517_Blink.d" -MT"src/lpc1517_Blink.o" -MT"src/lpc1517_Blink.d" -o "src/lpc1517_Blink.o" "../src/lpc1517_Blink.c"
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -DNO_BOARD_LIB -D__USE_CMSIS_DSPLIB=CMSIS_DSPLIB_CM3 -D__LPC15XX__ -D__REDLIB__ -I"C:\Users\Daniel\Desktop\lpc1517\LPC1517-blink\code\workspace\lpc_chip_15xx\inc" -I"C:\Users\Daniel\Desktop\lpc1517\LPC1517-blink\code\workspace\CMSIS_DSPLIB_CM3\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/lpc1517_Blink.d" -MT"src/lpc1517_Blink.o" -MT"src/lpc1517_Blink.d" -o "src/lpc1517_Blink.o" "../src/lpc1517_Blink.c"
 Finished building: ../src/lpc1517_Blink.c
  
 Building target: lpc1517_Blink.axf
 Invoking: MCU Linker
-arm-none-eabi-gcc -nostdlib -L"C:\Users\Daniel\Desktop\lpc1517\code\workspace\lpc_chip_15xx\Debug" -L"C:\Users\Daniel\Desktop\lpc1517\code\workspace\CMSIS_DSPLIB_CM3\lib" -Xlinker -Map="lpc1517_Blink.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "lpc1517_Blink_Debug.ld" -o "lpc1517_Blink.axf"  ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/lpc1517_Blink.o ./src/sysinit.o   -llpc_chip_15xx -lCMSIS_DSPLIB_CM3
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Daniel\Desktop\lpc1517\LPC1517-blink\code\workspace\lpc_chip_15xx\Debug" -L"C:\Users\Daniel\Desktop\lpc1517\LPC1517-blink\code\workspace\CMSIS_DSPLIB_CM3\lib" -Xlinker -Map="lpc1517_Blink.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "lpc1517_Blink_Debug.ld" -o "lpc1517_Blink.axf"  ./src/cr_startup_lpc15xx.o ./src/crp.o ./src/lpc1517_Blink.o ./src/sysinit.o   -llpc_chip_15xx -lCMSIS_DSPLIB_CM3
 Memory region         Used Size  Region Size  %age Used
        MFlash256:        2460 B       256 KB      0.94%
          Ram0_16:           8 B        16 KB      0.05%
@@ -25,5 +25,5 @@ Written checksum 0xfdffb2ca at offset 0x1c in file lpc1517_Blink.bin
 Previous value 0xfdffb2ca at offset 0x1c in file lpc1517_Blink.bin
  
 
-21:54:13 Build Finished (took 476ms)
+23:13:37 Build Finished (took 479ms)
 

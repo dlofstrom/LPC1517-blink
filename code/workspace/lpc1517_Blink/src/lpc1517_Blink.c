@@ -61,13 +61,13 @@ int main(void) {
         //Set GPIO value high
 		Chip_GPIO_WritePortBit(LPC_GPIO, 2, 13, true);
 
-		//Delay one second
+		//Delay 500ms
 		for (current_delay = 0; current_delay < delay_value; current_delay++) {}
 
         //Set GPIO value low
 		Chip_GPIO_WritePortBit(LPC_GPIO, 2, 13, false);
 
-		//Delay one second
+		//Delay 500ms
 		for (current_delay = 0; current_delay < delay_value; current_delay++) {}
 
     }

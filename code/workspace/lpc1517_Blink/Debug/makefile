@@ -29,7 +29,7 @@ all: lpc1517_Blink.axf
 lpc1517_Blink.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"C:\Users\Daniel\Desktop\lpc1517\code\workspace\lpc_chip_15xx\Debug" -L"C:\Users\Daniel\Desktop\lpc1517\code\workspace\CMSIS_DSPLIB_CM3\lib" -Xlinker -Map="lpc1517_Blink.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "lpc1517_Blink_Debug.ld" -o "lpc1517_Blink.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -L"C:\Users\Daniel\Desktop\lpc1517\LPC1517-blink\code\workspace\lpc_chip_15xx\Debug" -L"C:\Users\Daniel\Desktop\lpc1517\LPC1517-blink\code\workspace\CMSIS_DSPLIB_CM3\lib" -Xlinker -Map="lpc1517_Blink.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "lpc1517_Blink_Debug.ld" -o "lpc1517_Blink.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build
